@@ -45,3 +45,13 @@ gradle :app:assembleDebug   # APK em app/build/outputs/apk/debug/app-debug.apk
 **Compila e gera APK de debug** (`BUILD SUCCESSFUL`, app-debug.apk ≈ 10 MB).
 As 5 telas estão no ar; a geração de mesh usa um motor local procedural e pode
 ser apontada para um backend remoto via Configurações.
+
+## Roadmap
+
+Pendências abertas (delineadas, sem promessa de prazo):
+
+- [ ] Backend remoto: conectar `SettingsRepository` a um servidor de geração (hoje roda motor local procedural; sem backend → honestidade `NEEDS_BACKEND`, sem fake).
+- [ ] Testes instrumentados (`androidTest`): navegação, ciclo de criação, persistência JSON.
+- [ ] Exportação dedicada ao **Roblox Studio** além do `.obj` (plugin .rbxm / lugar de teste).
+- [ ] Ícones de status reais no Projects (hoje esboço textual).
+- [ ] CI no GitHub Actions: `assembleDebug` + lint a cada push (usa `gradle` do runner, não o wrapper local).
