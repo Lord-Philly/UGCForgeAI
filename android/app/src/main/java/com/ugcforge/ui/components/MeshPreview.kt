@@ -17,7 +17,7 @@ fun MeshPreview(mesh: MeshData, modifier: Modifier = Modifier, wireframe: Boolea
     val key = if (wireframe) "w" else "s"
     AndroidView(
         modifier = modifier,
-        factory = { ctx -> MeshPreviewView(ctx, mesh, renderMode) },
-        update = { view -> view.setRenderMode(renderMode) },
+        factory = { ctx -> MeshPreviewView(ctx, mesh) },
+        update = { view -> view.setRenderStyle(renderMode) },
     )
 }

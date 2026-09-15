@@ -62,7 +62,7 @@ class MeshPreviewView(context: Context, mesh: MeshData) : GLSurfaceView(context)
         renderMode = GLSurfaceView.RENDERMODE_CONTINUOUSLY
     }
 
-    fun setRenderMode(m: Int) { mode = m }
+    fun setRenderStyle(m: Int) { mode = m }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         renderer.handleTouch(event)
