@@ -1,0 +1,10 @@
+{
+  "honest_spec_0.2.0": {
+    "title": "Sculpt+ local - especificacao procedural offline (regra 36)",
+    "note": "Sculpt+ nada a ver com IA; e estilo de escultura low-poly repo celular final (regra 36) - mesh procedural local honesto, APK 0.2.0.",
+    "silhouettes": ["dome-brim(hair/helmet/hat/pauldron)", "torso-slab(cloth/jacket)"],
+    "quality": {"segments": [6, 48]},
+    "export": ["obj", "metadata.json"],
+    "backend": {"status": "NEEDS_BACKEND honesto - nunca inventa geracao semantic (regra 36)"}
+  }
+}
